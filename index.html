@@ -1,0 +1,275 @@
+Step 1: Basic HTML Questions
+
+01. What is HTML?
+=> HTML এর পূর্ণরূপ হলো  HyperText Markup Language | এটি মূলত একটি মার্কআপ ল্যাঙ্গুয়েজ, যা ওয়েব পেজের বিভিন্ন কনটেন্ট যেমন টেক্সট, ছবি, ভিডিও, লিঙ্ক ইত্যাদি গঠন ও প্রদর্শনের জন্য ব্যবহৃত হয়। HTML-এর  সিনট্যাক্স :
+    <html>
+        <!-- all infonmation -->
+    </html>
+
+
+02. What are HTML tags? 
+=> HTML ট্যাগ হলো একটি নির্দেশনা যা ব্রাউজারকে জানাই কোন নির্দিষ্ট এলিমেন্ট কিভাবে প্রদর্শিত হবে |৫টি HTML tag হলো:
+    1. <h1>Hello Bangladesh</h1>
+    2. <p>Hello Hablu Programmer</p>
+    3. <img src="" alt="">
+    4. <a href=""></a>
+    5. <hr>
+
+
+03. What is the difference between <head>, <body>, and <html> tags? & the role of the <!DOCTYPE html> declaration?
+=>  <html>: পুরো HTML ডকুমেন্টকে ধারণ করে।
+    <head>: ব্রাউজারের জন্য প্রয়োজনীয় meta এবং styleSheat এর তথ্য ধারণ করে।
+    <body>: দৃশ্যমান কনটেন্ট প্রদর্শন করে।
+    <!DOCTYPE html>: ব্রাউজারকে জানায় যে ডকুমেন্টটি HTML5 অনুযায়ী লেখা হয়েছে।
+
+
+04. Describe the function of the <title> tag. Where does it appear With Example. 
+=> <title> ট্যাগ হলো HTML ডকুমেন্টের একটি গুরুত্বপূর্ণ অংশ, যা একটি ওয়েব পেজের শিরোনাম নির্দেশ করে। এটি <head> ট্যাগের মধ্যে        স্থাপন করা হয় এবং এটি মূলত তিনটি প্রধান উদ্দেশ্যে ব্যবহৃত হয়:
+
+    পেজের শিরোনাম: <title> ট্যাগের মধ্যে লেখা থাকে পেজের শিরোনাম, যা ব্যবহারকারীদের ব্রাউজারের ট্যাবে প্রদর্শিত হয়। এটি পেজের বিষয়বস্তু সম্পর্কে একটি সংক্ষিপ্ত তথ্য দেয়।
+    
+    SEO : সার্চ ইঞ্জিনগুলো পেজের <title> ট্যাগকে একটি গুরুত্বপূর্ণ ফ্যাক্টর হিসেবে বিবেচনা করে। সঠিক এবং সম্পর্কিত শিরোনাম পেজের র‍্যাঙ্কিং বাড়াতে সাহায্য করে।
+    
+    বুকমার্কিং: যখন ব্যবহারকারী একটি পেজ বুকমার্ক করে, তখন সাধারণত ওই পেজের <title> ট্যাগের মান বুকমার্কে ব্যবহার করা হয়, যা ব্যবহারকারীদের মনে করিয়ে দেয় তারা কোন পেজে রয়েছেন।   
+
+    <title> ট্যাগের উদাহরণ:   
+        <!DOCTYPE html>
+        <html>
+            <head>
+                <title>Hello World</title>
+                <meta charset="UTF-8">
+            </head>
+        </html>
+
+05. How do you add comments in HTML, and why are they useful?
+=> <!-- Comment Here-->
+comment ব্যবহারের ফলে কোডের বিভিন্ন অংশের উদ্দেশ্য ব্যাখ্যা করা যাই। এটি আমার  এবং অন্যান্য ডেভেলপারদের জন্য কোড বুঝতে সাহায্য করে। যা ভবিষ্যতে কোড পরিবর্তন বা রক্ষণাবেক্ষণের সময় বিশেষভাবে সহায়ক।   
+
+
+Step 2: HTML Elements and Attributes
+
+06. What is the difference between an HTML element and an HTML attribute give us example with proper Explanation. 
+=> HTML element হলো HTML ডকুমেন্টের মূল অংশ যা ব্রাউজারে প্রদর্শিত হয়। এটি সাধারণত একটি ওপেনিং ট্যাগ, কনটেন্ট এবং একটি ক্লোজিং ট্যাগ নিয়ে গঠিত।উদাহরণ: <p>Hello Bangladesh</p>
+    HTML অ্যাট্রিবিউট: element এর  বৈশিষ্ট্য বা অতিরিক্ত তথ্য নির্দেশ করে যা ওপেনিং ট্যাগে যুক্ত হয়। উদাহরণ: <img src="" alt="">
+
+
+07. Explain the global attributes in HTML, such as class, id, style, and title With Example.
+=> global attributes হলো সেই অ্যাট্রিবিউটগুলো যা  HTML ডকুমেন্টের প্রতিটি উপাদানে প্রযোজ্য এবং এগুলো উপাদানের আচরণ এবং ডিজাইন       নিয়ন্ত্রণে সহায়ক।
+    class: class অ্যাট্রিবিউট ব্যবহার করে  একাধিক উপাদানকে একটি নির্দিষ্ট শ্রেণীতে অন্তর্ভুক্ত করা যাই | উদাহরণ : <p class="color">hello World</p>
+    id: id অ্যাট্রিবিউট ব্যবহার করে  প্রতিটি উপাদানকে একটি ইউনিক id প্রদান করা যাই। এটি JavaScript এবং CSS-এ একক উপাদানের উপর কাজ করার জন্য খুবই উপকারী।  উদাহরণ : <p id="align">hello World</p>
+    style: Style অ্যাট্রিবিউট ব্যবহার করে একটি উপাদানের জন্য ইনলাইন CSS style সরাসরি প্রয়োগ করা যায়।  উদাহরণ : <p style="color: red; align-items: center;">hello World</p>
+    title: title অ্যাট্রিবিউট ব্যবহার করে একটি element এর জন্য একটি টুলটিপ বার্তা প্রদান করা যায়। যখন user element এর  উপর মাউস নিয়ে যায়, তখন এই বার্তাটি প্রদর্শিত হয়। উদাহরণ:
+    <a href="" title="hello-world"></a>
+
+
+08. What is the purpose of the alt attribute in an <img> tag?
+=> alt অ্যাট্রিবিউট হলো <img> ট্যাগের একটি গুরুত্বপূর্ণ অংশ। এর মূল উদ্দেশ্য হলো ছবির একটি বর্ণনা প্রদান করা | যদি ছবিটি লোড হতে না পারে বা user যদি ছবিটি দেখতে না পায়, তবে alt টেক্সটটি প্রদর্শিত হয় | alt টেক্সট ব্যবহার করলে এটি সার্চ ইঞ্জিন রেঙ্ক  করতে সাহায্য করে |
+
+
+09. Describe the href attribute and its role in the <a> tag? 
+=> href অ্যাট্রিবিউট হলো <a> ট্যাগের একটি অপরিহার্য অংশ। এটি একটি লিংক তৈরি করতে ব্যবহৃত হয়, যা ব্যবহারকারীকে অন্য একটি পেজ, ডকুমেন্ট, বা ওয়েবসাইটে নিয়ে যায়।
+
+
+10. How does the target attribute work within an <a> tag? What is _blank?
+=> target অ্যাট্রিবিউট হলো <a> ট্যাগের একটি অতিরিক্ত বৈশিষ্ট্য যা নির্দেশ করে যে লিঙ্কে ক্লিক করার পর নতুন পৃষ্ঠা বা কনটেন্ট কোথায় এবং কিভাবে খুলবে।  _blank মানের মাধ্যমে, যখন ব্যবহারকারী লিঙ্কে ক্লিক করে, তখন নতুন একটি উইন্ডো বা ট্যাব খুলে লিঙ্কের কন্টেন্ট প্রদর্শিত হয়। 
+
+
+Step 3: Common HTML Tags
+
+11. How to add favicon in HTML & Why ?
+=> favicon হলো একটি ছোট আইকন যা একটি ওয়েবসাইটের সাথে সম্পর্কিত। এটি সাধারণত ব্রাউজারের ঠিকানা বারে, পেজের শিরোনামের পাশে এবং বুকমার্কগুলিতে প্রদর্শিত হয়। ফেভিকন যোগ করা হলে  ওয়েবসাইটের ব্র্যান্ডিং উন্নত করতে সাহায্য করে এবং ব্যবহারকারীদের জন্য একাধিক ট্যাবের মধ্যে  সাইটকে সনাক্ত করা সহজ করে।
+
+
+12. What is formatting in HTML?
+=> formatting শব্দটি HTML-এ টেক্সটের চেহারা এবং উপস্থাপনাকে নিয়ন্ত্রণ করার প্রক্রিয়া বোঝায়। ফরম্যাটিংয়ের মাধ্যমে  কিভাবে টেক্সট, ছবি এবং অন্যান্য উপাদানগুলি  ওয়েবপৃষ্ঠায় প্রদর্শিত হবে তা নির্ধারণ করা যায়। এটি ওয়েব পৃষ্ঠাকে আরও আকর্ষণীয় এবং পাঠযোগ্য করে তোলে।
+
+
+13. What Is Inline and block elements in html5 Give Us The Proper Explain With Example
+=> ব্লক উপাদান হল এমন উপাদান যা পুরো লাইন দখল করে এবং পরবর্তী উপাদানের জন্য নতুন লাইন তৈরি করে । উদাহরণ:<div>,<h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+    ইনলাইন উপাদান হল এমন উপাদান যা শুধুমাত্র প্রয়োজনীয় স্থান দখল করে এবং নতুন লাইন তৈরি করে না । উদাহরণ:<span>,<a>,
+    <img>
+
+
+14. What is a marquee?
+=> Marquee হলো একটি HTML উপাদান যা টেক্সট বা অন্যান্য উপাদানগুলিকে একটি দিক থেকে অন্য দিকে স্বয়ংক্রিয়ভাবে গতি করার জন্য ব্যবহৃত হয়। এটি সাধারণত একটি চলমান টেক্সট তৈরি করতে ব্যবহৃত হয় | 
+
+
+15. Explain the difference between <p>, <span>, and <div> tags. When would you use each?
+=> <p> ট্যাগটি একটি প্যারাগ্রাফ তৈরি করার জন্য ব্যবহৃত হয়।
+    <span> ট্যাগটি ইনলাইন এলিমেন্ট, যা সাধারণত টেক্সটের একটি অংশকে চিহ্নিত করার জন্য ব্যবহৃত হয়। এটি সাধারণত styling বা JavaScript এ ব্যবহৃত হয়।
+    <div> ট্যাগ একটি ব্লক এলিমেন্ট, উপাদানগুলির গ্রুপ  করার জন্য ব্যবহৃত হয়।    
+
+
+16. Describe the <ul>, <ol>, and <li> tags for creating lists.
+=> <ul> ট্যাগটি একটি অর্ডারড (অথবা বুলেট পয়েন্ট) তালিকা তৈরি করার জন্য ব্যবহৃত হয়। এতে তালিকার আইটেমগুলো বুলেট পয়েন্ট দিয়ে চিহ্নিত করা হয়।
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+    </ul>      
+    <ol> ট্যাগটি একটি অর্ডারড (সংখ্যাবাচক) তালিকা তৈরি করার জন্য ব্যবহৃত হয়। এতে তালিকার আইটেমগুলো সংখ্যা দিয়ে চিহ্নিত করা হয়।
+    <ol>
+        <li>item3</li>
+        <li>item4</li>
+    </ol>
+    <li> ট্যাগটি তালিকার আইটেম তৈরি করার জন্য ব্যবহৃত হয়।
+    <li>item5</li>         
+
+
+17. Describe how <input> works and some of its types, such as text, radio, and checkbox.
+=> <input> ট্যাগটি HTML ফর্মে ব্যবহারকারীর ইনপুট নেওয়ার জন্য ব্যবহৃত হয়।
+    <input type="text" placeholder="input here...">
+    radio button  ব্যবহার করা হয় একাধিক অপশন থেকে একটিমাত্র অপশন বাছাই করতে।
+    <label >Gender</label>
+    <input type="radio" name="gnd" id="male">
+    <label for="male">Male</label>
+    checkBox ব্যবহার করে একাধিক অপশন একত্রে নির্বাচন করা যায়।
+    <label>Hobby</label>
+    <input type="checkbox" name="hobby" id="footbal">
+    <label for="footbal">Footbal</label>
+    <input type="checkbox" name="hobby" id="cricket">
+    <label for="cricket">Cricket</label>
+
+
+18. What are <button>, <textarea>, and <select> tags, and how do they function?
+=> <button> ট্যাগটি একটি clickable button তৈরি করতে ব্যবহৃত হয়।    
+    <button>Click Me!</button>
+    <textarea> ট্যাগটি user থেকে একাধিক লাইনের টেক্সট ইনপুট নিতে ব্যবহৃত হয়।
+    <label for="message">Message</label>
+    <textarea name="message" id="message" placeholder="Comment here..." rows="5" cols="50"></textarea>
+    <select> ট্যাগটি একটি ড্রপডাউন তালিকা তৈরি করতে ব্যবহৃত হয়।
+    <label for="food">Frouits</label>
+    <select name="food" id="food">
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+    </select>
+
+
+19. How to link CSS to HTML?
+=> External: বাহ্যিক CSS ফাইল ব্যবহার করে HTML ডকুমেন্টের সঙ্গে CSS সংযুক্ত করা হয়। 
+    <link rel="stylesheet" href="style.css">
+    Internal: HTML ডকুমেন্টের <head> সেকশনে লেখা হয়।
+    <head>
+        <title>Hello World</title>
+        <style>
+            h1 {
+                color: green;
+                font-size: 30px;
+            }
+            p {
+                color: grey;
+            }
+        </style>
+    </head>
+    Inline: HTML ট্যাগের মধ্যে style অ্যাট্রিবিউটের মাধ্যমে লেখা হয়।
+    <hr style="height: 1px; width: 100px; background-color: tomato;">
+
+20. What is the <label> tag, and how is it associated with form inputs?
+=> <label> ট্যাগ ব্যবহার করলে uset সহজেই ইনপুট ফিল্ডটি বুঝতে পারেন।    
+   <label for="password">Password:</label>
+   <input type="password" name="password" id="password">
+
+
+Step 4: Advanced HTML Concepts 
+
+21. What is the <iframe> tag, and what are some common attributes used with it?
+=> ওয়েবসাইটে সহজেই অন্যান্য ওয়েব পেজ, ভিডিও, ম্যাপ, বা অ্যাপ্লিকেশন এম্বেড করা যায়।
+   Src: src অ্যাট্রিবিউটটি নির্দেশ করে যে কোন URL বা পেজটি <iframe> এর মধ্যে লোড হবে।
+    width এবং height অ্যাট্রিবিউট দিয়ে ফ্রেমের আকার নির্ধারণ করা হয়, যেটি পিক্সেল বা শতাংশ হিসেবে উল্লেখ করা যায়।
+    title অ্যাট্রিবিউট ফ্রেমের সংক্ষিপ্ত বর্ণনা প্রদান করে যা স্ক্রিন রিডার সহ বিভিন্ন অ্যাক্সেসিবিলিটি টুলে ব্যবহার করা হয়।
+    ফ্রেমের চারপাশে বর্ডার প্রদর্শন করবে কিনা তা নির্ধারণ করে।
+    এই অ্যাট্রিবিউটটি ফ্রেমের কনটেন্টকে fullscreen প্রদর্শনের অনুমতি দেয়।
+    loading="lazy" ব্যবহার করলে পেজ লোড হওয়ার পর ফ্রেমের কনটেন্ট লোড হয়, যা পেজ লোডিং টাইম কমাতে সহায়ক।
+    <iframe 
+    src="https://www.youtube.com" 
+    width="500" 
+    height="300" 
+    title="YouTube Video" 
+    frameborder="0" 
+    allowfullscreen 
+    loading="lazy">
+    </iframe>
+
+22. Describe how the <audio> and <video> tags work, including common attributes like controls, autoplay, and loop.
+=> <audio> ট্যাগটি ওয়েব পেজে অডিও ফাইল এম্বেড করার জন্য ব্যবহৃত হয়।
+    <video> ট্যাগটি ওয়েব পেজে ভিডিও ফাইল এম্বেড করার জন্য ব্যবহৃত হয়।
+    controls: এই অ্যাট্রিবিউটটি add করলে প্লেবার, ভলিউম নিয়ন্ত্রণ, এবং প্রগ্রেস বার প্রদর্শিত হয়, যার মাধ্যমে user মিডিয়া ফাইলটি প্লে, পজ, বা স্কিপ করতে পারেন।    
+    autoplay: এই অ্যাট্রিবিউটটি মিডিয়া ফাইলটিকে স্বয়ংক্রিয়ভাবে প্লে করা শুরু করে পেজ লোড হওয়ার সাথে সাথে।
+    loop: loop অ্যাট্রিবিউটটি মিডিয়া ফাইলটি শেষ হলে পুনরায় শুরু করে এবং নিরবচ্ছিন্নভাবে চলতে থাকে।
+
+
+23. Explain the <picture> tag and its usage in responsive design
+=> <picture> ট্যাগটি একটি রেস্পন্সিভ ইমেজ কন্টেইনার হিসেবে কাজ করে, যা বিভিন্ন ডিভাইসের স্ক্রিন সাইজ অনুযায়ী বিভিন্ন ইমেজ প্রদর্শন করতে সাহায্য করে। 
+    প্রতিটি <source> ট্যাগের srcset এবং media অ্যাট্রিবিউট ব্যবহার করে নির্দিষ্ট স্ক্রিন সাইজে প্রদর্শিত ইমেজ সেট করা হয়।    
+    <img> ট্যাগ একটি fallback হিসেবে কাজ করে। যদি ব্রাউজার <source> ট্যাগ সমর্থন না করে, তাহলে <img> ট্যাগের ইমেজ প্রদর্শিত হবে।
+
+24. Design a basic form that includes text input, radio buttons, a checkbox, and a submit button.
+=> <form >
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+
+    <label >Gender:</label>
+    <input type="radio" name="gnd" id="male">
+    <label for="male">Male</label>
+
+    <label >Hobby:</label>
+    <input type="checkbox" name="hobby" id="Driving">
+    <label for="Driving">Driving</label>
+
+    <button type="submit">Submit</button>
+    </form>    
+
+25. Embed a responsive YouTube video using the <iframe> tag.
+=> <iframe 
+    src="https://www.youtube.com"
+    width="500"
+    height="300" 
+    title="YouTube Video" 
+    allowfullscreen 
+    loading="lazy" 
+    frameborder="0">
+</iframe>
+
+26. Make a collapsible/expandable section using <details> and <summary> tags.
+=> <body>
+    <details>
+        <summary>Click Here</summary>
+        <p>Details</p>
+    </details>
+</body>
+
+27. Create a simple navigation bar using <nav>, <ul>, and <li> tags with three links.
+=> <nav>
+    <a href="#">Brand Name</a>>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Service</li>
+        <li>Contact</li>
+    </ul>
+    <input type="text" placeholder="Search here...">
+</nav>
+
+28. Create a complex table with merged cells (using colspan and rowspan) and include a <caption>, <thead>, <tfoot>, and <tbody>. Add descriptive <th> elements for accessibility and structure.
+=> <table>
+    <caption>Bazar List</caption>
+    <thead>
+        <tr>
+            <th>Items Name</th>
+            <th>Unit</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Potato</td>
+            <td>2kg</td>
+            <td>110</td>
+        </tr>
+        <tr>
+            <td>Onion</td>
+            <td>1kg</td>
+            <td>100</td>
+        </tr>
+    </tbody>
+    <tfoot>Total-Items: 2</tfoot>
+</table>
