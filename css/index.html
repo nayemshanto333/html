@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Basic CSS Questions  -->
+
+<!-- 01. What is CSS, and how does it work with HTML?  -->
+ => CSS একটি স্টাইলিং ল্যাঙ্গুয়েজ, যা HTML ডকুমেন্টের বিভিন্ন উপাদানকে স্টাইল বা ডিজাইন করতে ব্যবহার করা হয়। CSS এর মাধ্যমে আমরা HTML এর টেক্সট, রঙ, লেআউট, মার্জিন, প্যাডিং, এবং অন্যান্য  প্রপার্টিগুলোকে নিয়ন্ত্রণ করতে পারি। Link tag এর মাধ্যমে HTML page এ কানেক্ট করা হয় 
+
+<!-- 02. What is the difference between inline, internal, and external CSS? -->
+=> Inline CSS হলো CSS কোড যা HTML ট্যাগের মধ্যে সরাসরি লেখা হয় |
+Internal CSS হলো CSS কোড যা HTML ডকুমেন্টের <head> সেকশনের <style> ট্যাগের মধ্যে লেখা হয়।
+External CSS হলো CSS কোড যা আলাদা .css ফাইলে লেখা হয় এবং HTML ডকুমেন্টে <link> ট্যাগের মাধ্যমে সংযুক্ত করা হয়। 
+    
+/* 03. Explain the CSS box model. What properties does it consist of? */
+=> Html element গুলোর চারপাশে একটি বাক্স তৈরি করে যা চারটি অংশ নিয়ে গঠি। যেমন: margin, padding, border, content 
+
+/* 04. What is specificity in CSS, and how does it affect styling? */
+=> Css selector এর অগ্রাধিকার স্তর যা নির্ধারণ করে কোন স্টাইল প্রযোজ্য হব। 
+
+/* 05. How do CSS selectors work, and what are some common types of selectors? */
+=> CSS সিলেক্টর বিভিন্ন ধরণের HTML এলিমেন্টকে তাদের নাম, ক্লাস, আইডি, অ্যাট্রিবিউট ইত্যাদি নির্বাচন করে এবং তাদের উপর নির্দিষ্ট স্টাইল প্রয়োগ করে। কিছু  সিলেক্টর নিচে দেওয়া হলো:
+Element Selector: P{ color:blue};
+id selector : #color{color: tomato}
+class selector :.fontSize{font-size: 16px;}
+Attribute selector: input[type="text"]{color:red}
+
+/* 06. What are pseudo-classes and pseudo-elements? Give examples of each. */
+=> pseudo-class একটি এর বিশেষ অবস্থার জন্য ব্যবহৃত হয়। উদাহরণ: p:hover{color:red}
+pseudo-element  একটি নির্দিষ্ট অংশের জন্য ব্যবহৃত হয়। উদাহরণ: p::first-letter{font-size: 2em;}
+
+/* 07. Explain the concept of inheritance in CSS. */
+=>Inheritance এমন একটি প্রক্রিয়া যার মাধ্যমে CSS প্রপার্টি প্যারেন্ট এলিমেন্ট থেকে চাইল্ড এলিমেন্ট এ প্রয়োগ হয়। উদাহরণ: p{color: inherit;}
+
+/* 08. What is the !important rule in CSS, and when should you use it? */
+=> CSS-এ !important একটি বিশেষ নিয়ম, যা কোনো CSS প্রোপার্টিকে অন্য সকল স্টাইল রুলের চেয়ে বেশি অগ্রাধিকার দেয়। একটি নির্দিষ্ট এলিমেন্টের স্টাইল একাধিক জায়গা থেকে আসছে এবং কনফ্লিক্ট তৈরি করছে সেখানে ব্যবহৃত হয়।
+
+/* Mostly Used CSS Properties */
+
+/* 01. How does the display property work, and what are the different display values? */
+=> CSS-এর display প্রপার্টি কোনো HTML এলিমেন্ট কীভাবে ব্রাউজারে প্রদর্শিত হবে তা নিয়ন্ত্রণ করে। 
+display: block;  display: inline; display: inline-block; display: none; display: flex; display: grid;
+
+/* 02. What is the position property, and how do different position values (static, relative, absolute, fixed, sticky) behave? */
+=> CSS-এ position প্রপার্টি কোনো HTML এলিমেন্টের অবস্থান নিয়ন্ত্রণে ব্যবহার করা হয়।
+static: প্রতিটি HTML এলিমেন্টের ডিফল্ট position হল static।
+relative: এলিমেন্ট তার স্বাভাবিক অবস্থান থেকে সরিয়ে অবস্থান নির্ধারণ করতে ব্যবহার করা হয়।
+absolute: এলিমেন্টকে পেজের নিকটবর্তী relative, absolute, fixed, বা sticky এলিমেন্টের অনুকরণে অবস্থান নির্ধারণ করতে ব্যবহার করা হয়।
+fixed: এলিমেন্টকে স্ক্রিনের একটি নির্দিষ্ট স্থানে স্থায়ী করতে ব্যবহার করা হয়।
+sticky: এটি একটি মিশ্রিত অবস্থান, যা relative এবং fixed এর বৈশিষ্ট্য ধারণ করে।
+
+/* 03. How do the padding, margin, and border properties work in CSS? */
+=> CSS-এ padding, margin, এবং border প্রপার্টি HTML এলিমেন্টের চারপাশে স্থান নির্ধারণ করে। এগুলো CSS Box Model-এর মূল অংশ, যা প্রতিটি এলিমেন্টের চারপাশে স্তর তৈরি করতে ব্যবহৃত হয়। এগুলোর মাধ্যমে এলিমেন্টের মধ্যে এবং বাইরের স্থান নির্ধারণ করে ডিজাইন নিয়ন্ত্রণ করা যায়।
+
+/* 04. Explain the flex property. How do flex-grow, flex-shrink, and flex-basis work? */
+=> 
+CSS-এর flex প্রপার্টি কী এবং এটি কীভাবে কাজ করে?
+flex প্রপার্টি হলো CSS Flexbox-এর একটি shorthand প্রপার্টি, যা ফ্লেক্স আইটেমের আকার এবং তাদের চারপাশে থাকা স্থান কীভাবে ভাগ হবে তা নিয়ন্ত্রণ করে। flex মূলত তিনটি প্রপার্টির সমন্বয়ে গঠিত: flex-grow, flex-shrink, এবং flex-basis।
+flex-grow নির্ধারণ করে, ফ্লেক্স কন্টেইনারে অতিরিক্ত জায়গা থাকলে একটি এলিমেন্ট সেই জায়গার কতটুকু দখল করবে।
+flex-shrink প্রপার্টি নির্দেশ করে ফ্লেক্স কন্টেইনার সংকুচিত হলে একটি এলিমেন্ট কতটুকু সংকুচিত হবে।
+flex-basis প্রপার্টি দিয়ে ফ্লেক্স আইটেমের প্রাথমিক আকার নির্ধারণ করা হয়।
+
+/* 05. What is the difference between width, min-width, and max-width? */
+=> width প্রপার্টি একটি নির্দিষ্ট প্রস্থ সেট করতে ব্যবহৃত হয়। .width{width:100px;}
+min-width প্রপার্টি একটি এলিমেন্টের min-width নির্ধারণ করতে ব্যবহৃত হয়। .minWidth{min-width: 360px;}
+max-width প্রপার্টি একটি এলিমেন্টের max-width নির্ধারণ করতে ব্যবহৃত হয়। .maxWidth{max-width: 760px;}
+
+/* 06. How does the z-index property work, and when would you use it? */
+=> CSS-এ z-index প্রপার্টি ব্যবহার করে HTML এলিমেন্টের  স্তর নির্ধারণ করা যায়, অর্থাৎ একাধিক এলিমেন্ট একে অপরের উপর অবস্থান করলে, কোনটি উপরে থাকবে তা ঠিক করা যায়। 
+একাধিক এলিমেন্টের কোনটি উপরে থাকবে তা ঠিক করতে।
+পপআপ, ড্রপডাউন মেনু বা টুলটিপ এর মতো UI element গুলোকে সবসময় উপরের স্তরে দেখানোর জন্য ।
+
+/* 07. What is the difference between the opacity and visibility properties? */
+=> visibility element কে লুকিয়ে রাখে কিন্তু স্তান দখল করে ।
+opacity element এর স্বচ্ছতা নির্ধারণ করে ।
+
+/* CSS Layouts & Responsiveness  */
+/* 01. What is the difference between flexbox and CSS Grid, and when should you use each? */
+=> flexbox css এর একটি layout model যা সহজে element গুলোকে animate বা align করে । element গুলোকে একটি লাইনে auto-align বা justify করতে।
+Grid একটি 2D layout system যা element গুলোকে grid আকারে স্থাপন করে। photo galary, blog site, product listing এর জন্য ব্যাবহার করা হয়।
+
+/* 02. Explain how to create a responsive layout using media queries. */
+=> বিভিন্ন ডিভাইসে সঠিক ভাবে প্রদর্শন করার জন্য ব্যাবহার করা হয় । 
+উদাহরণ ঃ @meida (breakPoints){
+    /* css all style */
+}
+BreakPoints: ব্রেকপয়েন্ট হল এমন নির্দিষ্ট স্ক্রিন সাইজ যেখানে লেআউট পরিবর্তন করা প্রয়োজন হয়। সাধারণ ব্রেকপয়েন্টসের উদাহরণ হল 600px, 768px, 992px, এবং 1200px।
+Viewport Width: max-width বা min-width এর মতো ভিউপোর্ট প্রস্থ নির্ধারণ করে বিভিন্ন স্ক্রিন সাইজকে লক্ষ্য করা হয়।
+Mobile-fast পদ্ধতি: মোবাইল স্ক্রিনের জন্য প্রথমে ডিজাইন করা হয়, এবং তারপর বড় স্ক্রিনের জন্য min-width ব্যবহার করে অতিরিক্ত স্টাইল যোগ করা হয়।
+
+/* 03. How do you create a centered element in CSS? Provide multiple ways. */
+=> CSS এ একটি element কে center এ আনার জন্য অনেক way আছে সেগুলো নিছে দেওয়া হল ।
+text-lign: .parent{text-align: center;} 
+margin-auto: .parent{margin: 0 auto;}
+flex: .parent{display:flex; justify-align:center;}
+grid: .parent{display:grid; place-items: center;}
+position: .parent{position:absolute; left: 50%; transfrom: translate(-50%);}
+
+/* 04. How does CSS Grid work, and what are grid-template-rows and grid-template-columns? */
+=> CSS Grid হল একটি CSS লেআউট সিস্টেম যা দ্বিমাত্রিক লেআউট তৈরি করতে সহায়তা করে । 
+grid-template-rows: container এর জন্য প্রতিটি row কেমন হবে তা নির্ধারণ করে।
+grid-template-columns: container এর জন্য প্রতিটি column কেমন হবে তা নির্ধারণ করে।
+
+/* 05. How does the flex-direction property work in Flexbox, and what are its values? */
+=> container এর ভিতরের element গুলো কিভাবে সাজানো হবে তা নির্ধারণ করে ।
+row: এই মানটি ব্যাবহার করলে মান গুলো বাম থেকে ডানে সাজানো হবে ।
+row-reverse :  এই মানটি ব্যাবহার করলে মান গুলো ডান থেকে বামে সজানো হবে।
+column: এই মানটি ব্যাবহার করলে মান গুলো উপর থেকে নিছে সজানো হবে।
+column-reverse: এই মানটি ব্যাবহার করলে মান গুলো নিছে থেকে উপরে সাজানো হবে ।
+
+/* 06. What is a viewport, and how do you make elements responsive to viewport changes? */
+=> ভিউপোর্ট হল সেই দৃশ্যমান এলাকা যেখানে ওয়েব কন্টেন্ট প্রদর্শিত হয়।
+রেস্পন্সিভ ডিজাইনের জন্য viewport মেটা ট্যাগ, মিডিয়া কুয়েরি, শতাংশ এবং ভিউপোর্ট ইউনিট ব্যবহার করা যায়। ফ্লেক্সবক্স এবং CSS গ্রিডও রেস্পন্সিভ ডিজাইনকে সহজ করে।
+
+/* 07. How can you create a sticky footer that stays at the bottom of the page? */
+=> <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sticky footer design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header><h1>This is header area</h1></header>
+    <main><p>This is main content area</p></main>
+    <footer>This is footer area</footer>
+  </body>
+</html>
+
+/* 08. Explain how you would approach creating a mobile-first design. */
+=> মোবাইল-ফার্স্ট ডিজাইন একটি ওয়েব ডিজাইন কৌশল, যেখানে প্রথমে মোবাইল ডিভাইসের জন্য ডিজাইন করা হয় এবং পরে বড় স্ক্রিনের  জন্য ডিজাইন  করা হয়। মোবাইল-ফার্স্ট ডিজাইন অনুসরণ করলে ওয়েবসাইটটি সকল ডিভাইসে সহজেই ব্যবহারযোগ্য ও কার্যকরী হয়।
+
+/* Advanced CSS Questions */
+/* 01. What do you understand by the universal sector? */
+=> CSS এ Univesal selector হল এমন একটি selector যা সবগুলো element কে একসাথে নিরবাচন করে । Univesal selector কে "*" চিহ্ন দ্বারা প্রকাশ করা হয়। 
+
+/* 02. What are CSS preprocessors, and how do they work? Give examples like SASS or LESS. */
+=> Preprocessor হল একটি প্রোগ্রাম যা css লিখার প্রক্রিয়াকে আরও সহজ করে । যেমনঃ SASS , SCSS, LESS ইত্যাদি ।
+SASS এর উদাহরণ হল ।
+$primary-color: #3498db;
+body {
+  font-family: Arial, sans-serif;
+  color: $primary-color;
+
+  main {
+    color:$primary-color ;
+  }
+
+  footer {
+    background-color: $primary-color;
+    padding: 5px;
+  }
+}
+
+/* 03. Explain CSS custom properties (CSS variables) and their benefits. */
+=> CSS custom properties হল css এর এমন  একটি ফিচার যা variable তৈরি ও ব্যাবহারের সুযোগ দেয়।  CSS variable ব্যাবহার করতে $ বা  @ এর পরিবর্তে দুটি -- ড্যাশ ব্যাবহার করা হয়। উদাহরণ ঃ
+:root{
+  --primary-color:#3333fa;
+  --font-size: 16px;
+}
+header{
+  color: var(--primary-color);
+  font-size: var(--font-size);
+}
+main{
+  color: var(--primary-color);
+}
+footer{
+  color:var(--primary-color);
+  font-size: var(--font-size);
+}
+
+/* 04. How do CSS animations work, and how can you create a keyframe animation? */
+=> CSS Animation দুটি উপায়ে কাজ করে । Css propertis Animation এর কার্যকারিতা এবং বিশিষ্ট নির্ধারণ করে। keyframe Animation এর বিভিন্ন অবস্থান সংজ্ঞায়িত করে।
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+/* 05. What are CSS transitions, and how are they different from animations? */
+=> Transition হল css এর একটি বৈশিষ্ট যা elment এর  একটি state থেকে অন্য state এ নেওয়ার জন্য ব্যাবহার করা হয়। Transition সাধারনত Mouse-hover, foucs বা active অবস্থানে ব্যাবহার করা হয়।
+.button {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  transition: transform 0.5s ease;
+}
+
+/* 06. What is the difference between rem, em, and px units? */
+=> EM element এর parent এর font-size এর উপর নির্ভর করে font-size Change করে।
+REM root element এর font-size এর উপর নির্ভর করে font-size Change করে।
+px Device এর pixel এর উপর নির্ভরশীল ।
+
+/* 07. What is SVG and how can it be used to create custom shapes? */
+=> SVG হল Scaleable vector graphics | 
+<svg width="200px" height="100px">
+  <rect width="150px" height="80px" fill="red" />
+<svg/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
