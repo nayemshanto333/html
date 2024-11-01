@@ -1,0 +1,391 @@
+<!-- Basic Bootstrap Questions -->
+<!-- 01. What is Bootstrap, and why is it used in web development? -->
+=> Bootstrap হল frontend এর একটি জনপ্রিয় framework যা html , css, javascript দিয়ে তৈরি ।
+bootstrap ব্যাবহারের ফলে সহজেই resposive website design করা যায় । bootstrap এর predefine ক্রিত component গুলো ব্যাবহারের ফলে সহজে সুন্দর ও functional website design করা যায়।
+
+<!-- 02. How do you include Bootstrap in a project? Describe the different methods. -->
+=> cdn এর মাধ্যমে head section এ যুক্ত করা ।
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+local file এ যুক্ত করা । প্রথমে bootstrap offical site থেকে bootstrap download করতে হবে। project folder এ css এবং js ফিলেগুলো রাখতে হবে। html page এ <link> এবং <script> ট্যাগের মাধ্যমে লোকাল ফাইলে যুক্ত করতে হবে। 
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+
+<!--  03. Explain the grid system in Bootstrap. How many columns does it have, and how does it work? -->
+=> Bootstrap-এর গ্রিড সিস্টেম একটি ফ্লেক্সিবল এবং রেস্পন্সিভ লেআউট ডিজাইন করার উপায়, যা HTML ডকুমেন্টে সারি এবং কলাম গঠন করে। এটি ১২টি কলাম নিয়ে কাজ করে | উদাহরণঃ 
+একটি কলাম ঃ ১২ টি কলামের সমান হবে।
+২ টি কলাম ঃ প্রতিটি কলাম ৬টি কলামের আকারে হবে।
+৩ টি কলাম ঃ প্রতিটি কলাম ৪টি কলামের আকারে হবে।
+
+04. What are Bootstrap containers, and what’s the difference between .container and .container-fluid?
+=> গ্রিড সিস্টেমের মূল কাঠামো, যা কনটেন্টকে সীমাবদ্ধ রাখে। দুটি প্রধান ধরনের কনটেইনার রয়েছে:
+container: একটি ফিক্সড-উইডথ কনটেইনার।
+container-fluid: যা সম্পূর্ণ স্ক্রিনজুড়ে বিস্তৃত হয়।
+
+05. What are Bootstrap classes, and how do they differ from CSS classes?
+=> Bootstrap ক্লাস হলো CSS এর পূর্বনির্ধারিত স্টাইলগুলোর একটি সংগ্রহ যা বিভিন্ন ধরণের ডিজাইন, লেআউট, এবং রেস্পন্সিভ বৈশিষ্ট্য দ্রুত যোগ করতে ব্যবহৃত হয়।
+bootstrap class এর স্টাইল আগে থেকে নির্ধারণ করা থাকে , ফলে দ্রুত আগে থেকে নির্ধারণক্রিত স্টাইল প্রয়োগ করা যায়।
+css class devloper রা নিজেই তৈরি করে , ফলে নিজের ইচ্ছামত স্টাইল প্রয়োগ করতে পারে।
+
+06. Explain the concept of responsive design in Bootstrap.
+=> Bootstrap এ resposive হল এমন একটি কৌশল যার মাধ্যমে বিভিন্ন স্ক্রীনে বা ডিভাইসে নিজে নিজেই মানিয়ে নেয়। ফলে একই ওয়েবসাইটকে Phone, tablate, desktop বা বড় মনিটরে ভালভাবে প্রদর্শন কনটেইনার।
+
+07. How do breakpoints work in Bootstrap? List some commonly used breakpoints.
+=> Bootstrap-এ ব্রেকপয়েন্ট হলো এমন নির্দিষ্ট width যেখানে স্ক্রিন সাইজ অনুযায়ী ওয়েবসাইটের লেআউট বা ডিজাইনে পরিবর্তন করা হয়। এই ব্রেকপয়েন্টগুলো ব্যবহার করে রেস্পন্সিভ ডিজাইন তৈরি করা যায়, যাতে একটি ওয়েবসাইট বা অ্যাপ্লিকেশন ছোট ডিভাইস, ট্যাবলেট, এবং বড় স্ক্রিনের জন্য উপযুক্তভাবে প্রদর্শিত হয়। common কিছু breakpoints নিছে দেওয়া হলোঃ
+xs: 576px এর নিচের device এর জন্য ।
+sm: 576px এর উপরের device এর জন্য।
+md: 768px এর উপরের device এর জন্য।
+lg: 992px এর উপরের device এর জন্য।
+xl: 1200px এর উপরের device এর জন্য।
+xxl: 1400px এর উপরের device এর জন্য।
+
+08. What is a Bootstrap component? Give examples of some commonly used components.
+=> Bootstrap-এর কম্পোনেন্ট বলতে বিভিন্ন ধরনের ইন্টার‌্যাক্টিভ ইউআই উপাদান বোঝায়, যা ওয়েবসাইট বা ওয়েব অ্যাপ্লিকেশনে সহজেই যোগ করা যায়। নিচে কিছু common component দেওয়া হলো ঃ
+Bootstrap-এর .btn ক্লাসটি বাটন তৈরি করতে ব্যবহৃত হয়|<button class="btn btn-primary">Primary Button</button>
+ন্যাভিগেশন মেনু তৈরি করার জন্য navbar কম্পোনেন্ট ব্যবহার করা হয়।<nav class="navbar navbar-expand-lg navbar-light bg-light"> 
+    navigation
+</nav>
+কার্ড কম্পোনেন্টে ইমেজ, টেক্সট, লিঙ্ক ইত্যাদি যোগ করে একটি সুন্দর কন্টেইনার তৈরি করা যায়।<div class="card" style="width: 18rem;">card components</div>
+অ্যালার্ট কম্পোনেন্টটি ব্যবহার করে নোটিফিকেশন বা সতর্কবার্তা দেখানো যায়।<div class="alert alert-success" role="alert">alert component</div>
+
+// Commonly Used Bootstrap Components
+01. How do you create a navigation bar using Bootstrap? Explain any commonly used classes
+=> <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navigation-bar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-info ">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">BRAND</a>
+
+        <ul class="navbar-nav gap-4 ">
+          <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link ">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link ">Service</a></li>
+          <li class="nav-item"><a href="#" class="nav-link ">Contact</a></li>
+        </ul>
+        <button class="btn btn-primary px-4">SignIn</button>
+      </div>
+    </nav>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+common class এর বর্ণনা করা হলোঃ 
+navbar navbar-expand-lg bg-info: এই ক্লাসগুলো ব্যাবহার করে ব্যাকগ্রাউন্ডে নীল রঙের ন্যাভবার তৈরি করা হয়েছে, যা লার্জ স্ক্রিনে প্রসারিত হবে।
+navbar-brand : ন্যাভবারের বাম পাশে লোগো  দেখায়।
+navbar-nav: এটি ন্যাভ লিংকসমূহের জন্য একটি কনটেইনার হিসেবে কাজ করে।
+nav-item এবং nav-link: প্রতিটি লিংকের জন্য আলাদা আলাদা আইটেম তৈরি করে।
+
+02. What is a card in Bootstrap, and how do you create one?
+=>  <div class="card" style="width: 18rem;">
+    <img src="" alt="image here..." class="card-img-top">
+    <div class="card-body">
+      <h5 class="card-title">Card-title</h5>
+      <p class="card-text">Lorem ipsum dolor sit amet.</p>
+      <button class="btn btn-primary">Show more</button>
+
+    </div>
+   </div>
+
+03. Explain how the modal component works in Bootstrap. How do you trigger a modal?
+=> Bootstrap-এর Modal কম্পোনেন্ট হলো একটি পপ-আপ উইন্ডো যা ওয়েবপেজের উপরে প্রদর্শিত হয়, এবং এটি সাধারণত তথ্য দেখানো, ফর্ম জমা নেওয়া বা ইউজার কনফার্মেশনের মতো কাজগুলোর জন্য ব্যবহৃত হয়। Modal ব্যবহার করে একটি ওয়েবসাইটের ইন্টার‌্যাক্টিভিটি বাড়ানো যায়।
+<button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+    >
+      Clice Here
+    </button>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Hello Programmer
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Pariatur, expedita.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+04. What is the purpose of the btn class in Bootstrap, and how do you style buttons differently using Bootstrap?
+=> Bootstrap এ btn classটি ব্যাবহার করা হয় button তৈরি ও স্টাইল করার জন্য । btn class আগে থেকেই নির্ধারণ করা থাকে তাই খুব সহজে সুন্দর button তৈরি করা যায় । 
+<button type="button" class="btn btn-primary">Primary Button</button>
+<button type="button" class="btn btn-secondary">Secondary Button</button>
+<button type="button" class="btn btn-success">Success Button</button>
+<button type="button" class="btn btn-info">Info Button</button>
+<button type="button" class="btn btn-warning">Warning Button</button>
+
+05. How does the alert component work in Bootstrap, and what are some of its variations?
+=> Bootstrap-এর Alert কম্পোনেন্ট হলো একটি নোটিফিকেশন বা বার্তা প্রদর্শনের উপায়, যা সাধারণত ব্যবহারকারীদের কাছে বিভিন্ন সতর্কতা, সাফল্য, ইনফরমেশন বা ত্রুটি সম্পর্কিত বার্তা প্রদর্শনের জন্য ব্যবহৃত হয়। এই কম্পোনেন্টটি ব্যবহার করে ইউজারদের গুরুত্বপূর্ণ তথ্য সহজে প্রদর্শন করা যায়।
+<div class="alert alert-primary" >
+  This is a primary alert
+</div>
+<div class="alert alert-danger">
+  This is danger alert
+</div>
+<div class="alert alert-info">
+  This is info alert
+</div>
+
+06. What are dropdowns in Bootstrap, and how do they work?
+=> Dropdowns হলো Bootstrap-এর এমন একটি কম্পোনেন্ট, যা ব্যবহারকারীর ক্লিক করার পর অতিরিক্ত অপশন বা মেনু দেখায়।
+<div class="dropdown-menu">
+      <a href="#" class="dropdown-item"> item1</a>
+      <a href="" class="dropdown-item">item2 </a>
+      <a href="" class="dropdown-item"> item3</a>
+      <a href="" class="dropdown-item"> item4</a>
+</div>
+
+07. How do you create forms in Bootstrap, and what are the advantages of using form groups?
+=> Bootstrap ফ্রেমওয়ার্ক ব্যবহার করে দ্রুত এবং সুন্দর ফর্ম তৈরি করা যায়, যেখানে form groups ব্যবহার করা হলে ফর্ম ফিল্ডগুলোকে খুবই পরিষ্কার ও সংগতিপূর্ণ ভাবে উপস্থাপন করা যায়। Form groups মূলত একটি ফর্ম লেবেল এবং ইনপুট ফিল্ডকে একত্রিত করে, যা একটি নির্দিষ্ট স্টাইল বজায় রাখে।
+<form action="">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="example@gmail.com" class="form-control">
+      </div>
+      <div class="form-group mt-2">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Password" class="form-control">
+      </div>
+      <div class="form-group mt-2">
+       <input type="checkbox" id="remember" class="form-check-input">
+       <label for="remember">Remember Me</label>
+      </div>
+      <button type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
+      
+</form>
+
+Bootstrap Layout & Utilities
+01. How does the grid system in Bootstrap differ when using Flexbox or Grid layout utilities?
+=> 
+Bootstrap-এর Grid System ফ্রেমওয়ার্কে Flexbox এবং CSS Grid উভয়কেই ব্যবহার করা যায়, তবে প্রতিটির ব্যবহারিক পদ্ধতি ভিন্ন। Bootstrap-এর Flexbox ভিত্তিক গ্রিড সিস্টেম বেশিরভাগ ক্ষেত্রে ডিফল্ট হিসাবে ব্যবহৃত হয়, যেখানে Grid layout utilities ব্যবহার করলে CSS Grid-এর সুবিধা গ্রহণ করা যায়।
+Flexbox: Bootstrap-এর Flexbox ভিত্তিক গ্রিড সিস্টেমটি খুবই কার্যকর এবং সহজেই responsive লেআউট তৈরি করতে পারে । এটি ১২-কলামের লেআউট ব্যবস্থার উপর ভিত্তি করে কাজ করে, যেখানে প্রতিটি কলাম Flexbox-এর মাধ্যমে একসাথে কাজ করে।
+Grid: Bootstrap ৫.১ থেকে CSS Grid Layout utilities যুক্ত করা হয়েছে, যা CSS Grid-এর সুবিধা দেয়। এটি Flexbox-এর তুলনায় আরও জটিল এবং শক্তিশালী কন্ট্রোল প্রদান করে এবং কোনো ফ্রেমওয়ার্কের ওপর নির্ভর না করে কাস্টম লেআউট তৈরির সুবিধা দেয়।
+
+02. What is the difference between .col, .col-sm, .col-md, etc., in Bootstrap's grid system?
+=> Bootstrap-এর গ্রিড সিস্টেমে .col, .col-sm, .col-md, .col-lg, এবং .col-xl ক্লাসগুলো ব্যবহৃত হয় ভিন্ন ভিন্ন স্ক্রিন সাইজের জন্য responsive লেআউট তৈরি করতে।
+.col: সব স্ক্রিন সাইজের জন্য ।
+.col-sm: ছোট ট্যাবলেট এবং তার চেয়ে বড় 
+.col-md: ট্যাবলেট এবং তার চেয়ে বড়
+.col-lg: ল্যাপটপ এবং তার চেয়ে বড়
+.col-xl: বড় ডেস্কটপ এবং তার চেয়ে বড়
+
+03. How do you center elements in Bootstrap? Provide multiple methods.
+=> <div class="text-center">
+  <p>Lorem, ipsum dolor.</p>
+</div>
+flexbox:
+<div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+  <div>Lorem, ipsum dolor.</div>
+</div>
+margin:
+<div class="row">
+  <div class="col-6 mx-auto">
+    <p>Lorem, ipsum dolor.</p>
+  </div>
+</div>
+grid:
+<div class="row">
+  <div class="col-6 offset-3">
+    <p>Lorem, ipsum dolor.</p>
+  </div>
+</div>
+
+04. What are utility classes in Bootstrap, and how do they help in quick styling?
+=> Bootstrap-এ Utility Classes হলো প্রি-ডিফাইন্ড CSS ক্লাস যেগুলো সাধারণত ছোটখাটো স্টাইলিং পরিবর্তনের জন্য ব্যবহার করা হয়। এগুলো ব্যাবহার করলে দ্রুত এবং সহজে স্টাইল অ্যাপ্লাই করা যায়। যেমন: মার্জিন, প্যাডিং, টেক্সট অ্যালাইনমেন্ট, কালার, ডিসপ্লে প্রোপার্টি ইত্যাদি। 
+margin & padding:
+<div class="m-3 p-3">Lorem, ipsum dolor.</div>
+text alignment:
+<div class="text-center">Lorem ipsum dolor sit amet.</div>
+color:
+<div class="text-primary">Lorem ipsum dolor sit amet.</div>
+flex:
+<div class="d-flex justify-content-center align-items-center">Lorem ipsum dolor sit amet.</div>
+display:
+<div class="d-inline-block">Lorem ipsum dolor sit amet.</div>
+
+05. Explain how the m- and p- classes work for margin and padding in Bootstrap.
+=> Bootstrap-এ m- এবং p- ক্লাসগুলো মার্জিন এবং প্যাডিং সেট করার জন্য ব্যবহার করা হয়। m হলো মার্জিনের জন্য এবং p হলো প্যাডিংয়ের জন্য। এই ক্লাসগুলো ব্যবহারের মাধ্যমে উপাদানের চারপাশে নির্দিষ্ট মার্জিন বা প্যাডিং যুক্ত করা যায়।
+<div class="m-3">এই ডিভে চারপাশে ১rem মার্জিন যুক্ত করা হয়েছে</div>
+<div class="p-4">এই ডিভে চারপাশে ১.৫rem প্যাডিং যুক্ত করা হয়েছে</div>
+<div class="mt-2">এই ডিভে উপরের দিকে ০.৫rem মার্জিন যুক্ত করা হয়েছে</div>
+<div class="mx-5">এই ডিভে অনুভূমিকভাবে ৩rem মার্জিন যুক্ত করা হয়েছে</div>
+<div class="py-1">এই ডিভে উল্লম্বভাবে ০.২৫rem প্যাডিং যুক্ত করা হয়েছে</div>
+
+06. How does the Bootstrap spacing system work
+=> Bootstrap-এর স্পেসিং সিস্টেমটি মার্জিন  এবং প্যাডিং  সেট করার জন্য বিশেষভাবে ডিজাইন করা হয়েছে, যা উপাদানের চারপাশে সঠিক পরিমাণের স্পেস বা গ্যাপ প্রদান করে।
+0: স্পেস একদম নেই।
+1: 0.২৫রেম ।
+2: 0.৫রেম।
+3: ১রেম।
+4: ১.৫রেম।
+5: ৩রেম।
+
+07. What are responsive utilities in Bootstrap, and how can you hide/show elements on specific screen sizes?
+=> Bootstrap-এ Responsive Utilities এমন কিছু ক্লাস যা বিভিন্ন স্ক্রিন সাইজ অনুযায়ী উপাদানের দৃশ্যমানতা (visibility) এবং স্টাইলিং নিয়ন্ত্রণ করতে সাহায্য করে।
+<div class="d-block d-md-none">
+    <!-- এই অংশটি শুধু ছোট স্ক্রিনে দেখা যাবে -->
+</div>
+<div class="d-none d-lg-block">
+    <!-- এই অংশটি শুধু বড় স্ক্রিনে দেখা যাবে -->
+</div>
+
+08. How do you use the .d-flex and .justify-content-* classes to align items?
+=> Bootstrap-এ .d-flex এবং .justify-content-* ক্লাসগুলো ব্যবহার করে উপাদানগুলোকে সরাসরি লাইনে সাজানো এবং অনুভূমিকভাবে বিভিন্নভাবে সমন্বয় করা যায়।
+.d-flex ক্লাসটি কন্টেইনারকে ফ্লেক্স কন্টেইনারে রূপান্তর করে যার ফলে আইটেমগুলো একই লাইনে অবস্থান করতে।
+.justify-content-start	আইটেমগুলোকে বাম দিকে স্থাপন করবে
+.justify-content-center	আইটেমগুলোকে কেন্দ্রে স্থাপন করবে
+.justify-content-end	আইটেমগুলোকে ডান দিকে স্থাপন করবে
+.justify-content-between	আইটেমগুলোর মধ্যে সমান গ্যাপ দেবে
+.justify-content-around	চারপাশে সমান স্পেস রেখে আইটেমগুলো স্থাপন করবে
+.justify-content-evenly	আইটেমগুলোর মধ্যে সমানভাবে স্পেস বিতরণ করবে
+
+Advanced Bootstrap Questions
+01. How do you customize Bootstrap using SASS or LESS?
+=> Bootstrap-কে কাস্টমাইজ করার জন্য SASS বা LESS ব্যবহার করা হয়। এগুলো হলো CSS প্রিপ্রসেসর যা CSS কোডকে আরও শক্তিশালী এবং পুনরায় ব্যবহারযোগ্য করে তোলে।
+প্রয়োজনীয় টুলস ইন্সটলেশন:
+npm install bootstrap
+npm install sass
+Bootstrap এর SASS ফাইল ইম্পোর্ট করা:
+@import "node_modules/bootstrap/scss/bootstrap";
+কাস্টম ভেরিয়েবল সেট করা:
+$primary: #3498db;    
+$font-family-base: 'Roboto', sans-serif;
+CSS ফাইলে কম্পাইল করা:
+কম্পাইল করতে SASS কমান্ড বা npm স্ক্রিপ্ট ব্যবহার করতে পারে |
+sass custom.scss custom.css
+
+02. Explain Bootstrap’s JavaScript components and how they add interactivity.
+=> Bootstrap-এর JavaScript কম্পোনেন্টগুলো ওয়েবসাইটে ইন্টার‌্যাক্টিভ ফিচার বা ফাংশনালিটি যুক্ত করতে সহায়তা করে। এই কম্পোনেন্টগুলো HTML এবং CSS-এর সাথে মিলে কাজ করে, ব্যবহারকারীর অভিজ্ঞতা বাড়ানোর জন্য বিভিন্ন ইন্টার‌্যাকশন তৈরি করে, যেমন মডাল উইন্ডো, টুলটিপ, ড্রপডাউন, ইত্যাদি।
+modal হল একটি পপ-আপ উইন্ডো, যা সাধারণত কোনো ফর্ম বা মেসেজ প্রদর্শনের জন্য ব্যবহার করা হয়।
+dropdown menu ব্যবহার করে একাধিক অপশন প্রদর্শন করা যায়, যেগুলো ক্লিক করার পর প্রদর্শিত হয়।
+carousel ব্যবহার করে ইমেজ স্লাইডার তৈরি করা যায়, যা স্বয়ংক্রিয় বা ব্যবহারকারীর ক্লিক অনুযায়ী ইমেজ পরিবর্তন করে।
+tooltip ব্যবহার করে ইমেজ বা টেক্সটের উপর হোভার করলে অতিরিক্ত তথ্য প্রদর্শিত হয়।
+collapse ব্যবহার করে কনটেন্ট লুকানো বা প্রদর্শন করা যায়।
+
+03. What is the carousel component in Bootstrap, and how do you create one?
+=> Bootstrap-এর Carousel কম্পোনেন্টটি হলো একটি স্লাইডার, যা স্বয়ংক্রিয়ভাবে বা ব্যবহারকারীর নিয়ন্ত্রণে ইমেজ বা কনটেন্ট একের পর এক প্রদর্শন করতে সাহায্য করে। এটি মূলত ওয়েবসাইটে ইমেজ গ্যালারি, প্রমোশনাল কনটেন্ট, বা বৈচিত্র্যময় কনটেন্ট দেখানোর জন্য ব্যবহৃত হয়।
+<div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active bg-info">
+          <img src="..." class="d-block w-100" alt="...">
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, exercitationem nulla. Expedita vel molestias amet beatae voluptatum non! Repellat vel dolor et iusto nostrum consequuntur architecto qui, repellendus voluptas nemo?</p>
+        </div>
+        <div class="carousel-item bg-danger">
+          <img src="..." class="d-block w-100" alt="...">
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, exercitationem nulla. Expedita vel molestias amet beatae voluptatum non! Repellat vel dolor et iusto nostrum consequuntur architecto qui, repellendus voluptas nemo?</p>
+        </div>
+        <div class="carousel-item bg-success">
+          <img src="..." class="d-block w-100" alt="...">
+          <h1>Lorem ipsum dolor sit amet.</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, exercitationem nulla. Expedita vel molestias amet beatae voluptatum non! Repellat vel dolor et iusto nostrum consequuntur architecto qui, repellendus voluptas nemo?</p>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+04. How can you make a website theme dark or light using Bootstrap?
+=> <div class="container mt-5">
+    <h1>change theme</h1>
+    <button id="toggleTheme" class="btn btn-primary" >Dark</button>
+  </div>
+  <script>
+    const toggleButton = document.getElementById('toggleTheme');
+    let isDark = false;
+    toggleButton.addEventListener('click', ()=> {
+      if(isDark){
+        document.body.classList.remove('bg-dark', 'text-white');
+        document.body.classList.add('bg-light', 'text-dark');
+        toggleButton.textContent = 'dark';
+      }else{
+        document.body.classList.remove('bg-light' , 'text-dark');
+        document.body.classList.add('bg-dark', 'text-light');
+        toggleButton.textContent = 'Light';
+      }
+      isDark = !isDark;
+    })
+  </script>
+
+05. What are the pros and cons of using Bootstrap in a project?
+=> Bootstrap ব্যবহারের সুবিধাসমূহ:
+রেসপন্সিভ ডিজাইন: Bootstrap স্বয়ংক্রিয়ভাবে রেসপন্সিভ ডিজাইন প্রদান করে, যা বিভিন্ন ডিভাইসে (মোবাইল, ট্যাবলেট, ডেস্কটপ) সঠিকভাবে কাজ করে।
+class & element :Bootstrap বিভিন্ন ধরনের প্রি-ডিজাইনড কম্পোনেন্ট, যেমন: বাটন, ন্যাভিগেশন বার, কারোসেল, টেবিল ইত্যাদি প্রদান করে, যা ডেভেলপমেন্টের সময় কমায়।
+ক্রস-ব্রাউজার সমর্থন: Bootstrap বিভিন্ন ব্রাউজারে কাজ করার জন্য অপ্টিমাইজড, যা ব্রাউজার কম্প্যাটিবিলিটি নিশ্চিত করে।
+customizetion: Bootstrap ব্যবহার করে আপনার নিজস্ব থিম তৈরি করা যায়, এবং SASS বা LESS ব্যবহার করে বিভিন্ন স্টাইল সহজে পরিবর্তন করা যায়।
+প্রয়োজনীয় নথি:Bootstrap এর ডকুমেন্টেশন খুবই উন্নত এবং স্পষ্ট, যা নতুন ব্যবহারকারীদের জন্য সাহায্য করে।
+
+Bootstrap ব্যবহারের অসুবিধাসমূহ : 
+weight: Bootstrap-এর সিএসএস এবং জেএস ফাইলগুলি তুলনামূলকভাবে বড় হতে পারে, যা পেজ লোডিং টাইম বাড়াতে পারে।
+স্টাইলের সীমাবদ্ধতা: যেহেতু Bootstrap এর ক্লাসগুলি পূর্বনির্ধারিত, তাই মাঝে মাঝে এটি কাস্টম ডিজাইন তৈরি করতে সীমাবদ্ধতা সৃষ্টি করতে পারে।
+ওভারহেড: Bootstrap ব্যবহারের ফলে কিছু অপ্রয়োজনীয় ক্লাস এবং ফিচার যুক্ত হতে পারে যা আপনার প্রজেক্টের জন্য দরকার নেই।
+নিখুঁত নিয়ন্ত্রণের অভাব: কিছু ডেভেলপার মনে করেন যে Bootstrap ব্যবহার করলে তারা সম্পূর্ণ নিয়ন্ত্রণ হারান, কারণ এটি একাধিক স্থানীয় স্টাইলিং এবং কাস্টমাইজেশনের ওপর নির্ভরশীল।
+শিক্ষার সময়: নতুন ব্যবহারকারীদের জন্য Bootstrap-এর কনসেপ্ট এবং ক্লাসগুলো শেখার জন্য কিছু সময় লাগতে পারে।
+
+
+06. How do you override default Bootstrap styling with custom CSS?
+=> Bootstrap এর ডিফল্ট স্টাইলিংকে কাস্টম CSS দিয়ে ওভাররাইড করার জন্য কিছু নির্দিষ্ট পদক্ষেপ অনুসরণ করতে হয়। নিচে এর প্রক্রিয়া বর্ণনা করা হলো:
+1. কাস্টম CSS ফাইল তৈরি করা: প্রথমে  একটি নতুন CSS ফাইল তৈরি করতে হবে, যেখানে কাস্টম স্টাইলগুলি লিখতে হবে। যেমনঃ  custom.css।
+২. HTML ফাইলে কাস্টম CSS যুক্ত করাঃ  HTML ফাইলে Bootstrap CSS এর লিংক করার পরে,  কাস্টম CSS ফাইলের লিংক যুক্ত করতে হবে এর ফলে কাস্টম স্টাইলগুলি Bootstrap এর ডিফল্ট স্টাইলগুলির উপরে প্রাধান্য পাবে।
+৩. কাস্টম CSS লেখাঃ custom.css ফাইলে  Bootstrap এর ডিফল্ট স্টাইলগুলিকে ওভাররাইড করতে পারে। 
+৪. !important ব্যবহার করা ঃ কিছু ক্ষেত্রে,  যদি Bootstrap এর ডিফল্ট স্টাইলিংকে সম্পূর্ণরূপে ওভাররাইড করতে চায় এবং  কাস্টম স্টাইলটি প্রাধান্য পায়, তবে !important ব্যবহার করতে হবে তবে এটি ব্যবহারে সতর্কতা অবলম্বন করা উচিত, কারণ এটি কাস্টমাইজেশনকে জটিল করতে পারে।
+
+০৭. What’s new in the latest version of Bootstrap? Name some features.
+=> Bootstrap এর সর্বশেষ সংস্করণে Bootstrap 5.3.0 কিছু নতুন ফিচার এবং আপডেট এসেছে যা ব্যবহারকারীদের অভিজ্ঞতাকে আরও উন্নত করেছে। 
+1. ড্রপডাউন ডিফল্ট পরিবর্তন: Bootstrap 5.3 এ ড্রপডাউন ডিফল্টরূপে data-bs-auto-close="outside" সেট করা হয়েছে, যাতে ড্রপডাউনটি বাইরের ক্লিক করার মাধ্যমে স্বয়ংক্রিয়ভাবে বন্ধ হয়।
+2. কার্ডের নতুন ডিজাইন: নতুন কার্ড স্টাইল এবং ক্লাস যুক্ত করা হয়েছে, যা কার্ডের ডিজাইনকে আরও আকর্ষণীয় করে।
+3. টেবিলের উন্নতি: টেবিলের জন্য নতুন ক্লাস যোগ করা হয়েছে, যেমন .table-responsive, যা টেবিলগুলিকে আরও রেসপন্সিভ করে তোলে।
+4. CSS ভ্যারিয়েবলের সমর্থন: Bootstrap 5.3 এ CSS ভ্যারিয়েবলগুলোর (custom properties) সমর্থন যোগ করা হয়েছে, যা কাস্টমাইজেশনকে সহজতর করে।
+5. বুটস্ট্র্যাপ ফন্টস: Bootstrap 5.3 এ নতুন ফন্টস এবং টেক্সট স্টাইলিং অপশন যুক্ত করা হয়েছে, যা ব্যবহারকারীদের ডিজাইন করতে আরও স্বাচ্ছন্দ্য দেয়।
+6. নতুন ইউটিলিটি ক্লাস: নতুন ইউটিলিটি ক্লাসগুলি যেমন gap, flex, এবং grid ক্লাসগুলো, যা লেআউট এবং স্পেসিং নিয়ন্ত্রণকে আরও সহজ করে তোলে।
+7. জাভাস্ক্রিপ্ট উপাদানের উন্নতি: জাভাস্ক্রিপ্ট উপাদানগুলির জন্য উন্নতি করা হয়েছে, যেমন toast, tooltip, এবং popover। এগুলোর পারফরম্যান্স এবং কার্যকারিতা বৃদ্ধি করা হয়েছে।
+8. কাস্টমাইজেশন অপশন:Bootstrap 5.3 কাস্টমাইজেশন অপশনগুলোর ক্ষেত্রে আরও উন্নতি করেছে, যাতে ব্যবহারকারীরা সহজেই তাদের প্রয়োজন অনুযায়ী থিম এবং স্টাইল পরিবর্তন করতে পারে।
+9. মোডাল ও টুলটিপের উন্নতি: মোডাল এবং টুলটিপের জন্য নতুন ফিচার এবং অপশন যুক্ত করা হয়েছে, যা ব্যবহারকারীদের জন্য আরও ইন্টারঅ্যাকটিভ করে তোলে।
+10. সেটিংস ও ডোকুমেন্টেশন আপডেট: Bootstrap 5.3 এ ডোকুমেন্টেশন আপডেট করা হয়েছে, যাতে নতুন ব্যবহারকারীরা সহজেই ফ্রেমওয়ার্কটি ব্যবহার করতে পারে।
